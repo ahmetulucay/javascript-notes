@@ -1,6 +1,8 @@
 # JS Works
 
-Samples (1-2)
+JS samples (1-2)
+
+JS works
 
 #
 
