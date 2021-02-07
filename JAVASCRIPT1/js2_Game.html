@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tahmin Etme Oyunu</title>
+        <script type="text/javascript" src="js2_Game.js"></script>
+    </head>
+    <body>
+        <div id="counter"></div>
+        <script>
+            var i = 0;
+            setInterval(function() { counter() }, 0);
+            function counter()
+            {
+               document.getElementById("counter").innerHTML += i++;
+            }
+        </script>
+    </body>
+</html>
