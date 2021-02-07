@@ -1,0 +1,181 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Layout With Flexbox</title>
+    <style media="screen">
+        html, body{padding:0; margin:0;}
+        input{font-size:14px;}
+        body{background-color: grey; padding-bottom: 100px;}
+        h2, h3{margin: 0 0 .75em 0;}
+        .container{
+            max-width: 750px;
+            margin: 20px auto 0 auto;
+            padding: 30px;
+            background-color: #FFF;
+            border-radius: 5px;
+        }
+        .form-row{
+            padding: 10px 0;
+            display: flex;
+
+        }
+        .form-row label{
+            padding: 10px;
+            flex: 1;
+        }
+        .form-row input{
+            flex: 3;
+
+        }
+
+        .column-layout{
+            max-width: 1300px;
+            background-color: #FFF;
+            margin: 40px auto 0 auto;
+            line-height: 1.65;
+            padding: 20px 50px;
+            display: flex;
+        }
+
+        .main-column{
+            flex: 1;
+            order: 2;
+        }
+
+        .sidebar-one{
+            flex: 1;
+            order: 1;
+        }
+
+        .sidebar-two{
+            flex: 1;
+            order: 3;
+        }
+
+        .call-outs-container{
+            max-width: 1400px;
+            margin: 40px auto 0 auto;
+        }
+
+        .call-out{
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px; 
+            flex-basis: 30%;
+        }   
+
+        @media (min-width: 900px) {
+             .call-outs-container{
+                 display: flex ;
+                 justify-content: space-between;
+             }
+            
+        }
+
+
+        .call-out:nth-child(1){background-color: pink;}
+        .call-out:nth-child(2){background-color: blue;}
+        .call-out:nth-child(3){background-color: green;}
+
+        .fixed-size-container{
+            max-width: 1400px;
+            margin: 40px auto 0 auto;
+            background-color: #FFF;
+            padding: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .fixed-size{
+            width: 150px;
+            height: 100px;
+            background-color: #990b47;
+            color: #FFF;
+            line-height: 100px;
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .banner{
+            height: 400px;
+            max-width: 700px;
+            margin: 40px auto 40px auto;
+            background-color: #2a2a2a;
+            display: flex;
+        }
+
+        .center{
+            color: #FFF;
+            font-size: 50px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Layout With Flexbox</h1>
+        <form class="" action="index.html" method="post">
+            <div class="form-row">
+                <label for="name">Name: </label>
+                <input type="text" name="" value="" id="name">
+            </div>
+            <div class="form-row">
+                <label for="q">Secret Question: </label>
+                <input type="text" name="" value="" id="q">
+            </div>
+        </form>
+    </div>
+
+    <div class="column-layout">
+        <div class="main-column">
+            <h2>Main Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectatur adipsicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectatur adipsicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectatur adipsicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectatur adipsicing elit.</p>
+        </div>
+
+        <div class="sidebar-one">
+            <h3>Sidebar One</h3>
+            <p>Lorem ipsum dolor sit amet, consectatur adipfdfdfdghghgsicing elit.</p>
+        </div>
+
+        <div class="sidebar-two">
+            <h3>Sidebar Two</h3>
+            <p>Lorem ipsum dolor sit amet, consectatur adipsidfdfddfdfdcing elit.</p>
+        </div>
+    </div>
+
+    <div class="call-outs-container">
+        <div class="call-out">
+            <h4>Feature 1</h4>
+            <p>Lorem ipsum dolor sitcvdfdfdfd amet, consectatur adipfdfdfdghghgsicing elit.</p>
+        </div>
+        <div class="call-out">
+            <h4>Feature 2</h4>
+            <p>Lorem ipsum dolor sitcvdfdfdfd amet, consectatur adipfdfdfdghghgsicing elit.</p>
+        </div> 
+        <div class="call-out">
+            <h4>Feature 3</h4>
+            <p>Lorem ipsum dolor sitcvdfdfdfd amet, consectatur adipfdfdfdghghgsicing elit.</p>
+        </div>   
+    </div>
+
+    <div class="fixed-size-container">
+        <div class="fixed-size">1</div>
+        <div class="fixed-size">2</div>
+        <div class="fixed-size">3</div>
+        <div class="fixed-size">4</div>
+        <div class="fixed-size">5</div>        
+    </div>
+
+    <div class="banner">
+        <dic class="center">Beni Merkeze Al</dic>
+    </div>
+</body>
+</html> 
