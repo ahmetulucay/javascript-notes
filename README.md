@@ -1,7 +1,5 @@
 # JS Works
 
-Html-Css
-
 JS samples (1-2)
 
 JS works
