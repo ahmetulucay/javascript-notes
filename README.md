@@ -1,4 +1,4 @@
-# JS Works
+# JS Notes
 
 JS samples (1-2)
 
