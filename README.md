@@ -2,8 +2,6 @@
 
 JS samples (1-2)
 
-JS works
-
 Bootstrap
 
 Dom
