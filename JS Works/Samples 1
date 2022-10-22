@@ -42,18 +42,18 @@
             element.innerHTML = "Mouse Over Effecti";
             element.style.color = "Blue";
         }
-        -----------
+        ----------
         function mouseout(){
             var element = document.getElementById("para1");
             element.innerHTML = "Mouse Out Effecti";
             element.style.color = "Green";
         }
-        -----------
+        ----------
         function renkDegistir(){
           var element = document.getElementById("para1");
           element.style.color = "red";
         }
-        -----------
+        ----------
         function tikla(element){
             element.innerHTML = "Butona tiklandi...";
             alert("Butona Tikladiniz.")
